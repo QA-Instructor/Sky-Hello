@@ -6,7 +6,7 @@ RUN apt-get update && \
  apt-get -y install apache2
 
 # Install apache and write hello world message
-RUN echo 'Hello World!' > /var/www/html/index.html
+RUN echo '<h1>Welcome everyone!</h1>' > /var/www/html/index.html
 
 # Create a shell script to configure apache folders and 
 # run the apache2 service
